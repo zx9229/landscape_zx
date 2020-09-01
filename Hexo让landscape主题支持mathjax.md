@@ -13,7 +13,7 @@
 可以将该内容添加到`<%- js('js/script') %>`之前。  
 
 #### 创建mathjax.ejs文件  
-创建`themes/landscape/layout/_partial/mathjax.ejs`文件，其内容如下：
+创建`themes/landscape/layout/_partial/mathjax.ejs`文件，其内容如下：  
 ```html
 <!-- https://github.com/xiangming/landscape-plus/blob/master/layout/_partial/mathjax.ejs -->
 <script type="text/x-mathjax-config">

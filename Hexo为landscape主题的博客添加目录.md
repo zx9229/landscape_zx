@@ -1,12 +1,13 @@
-拷贝自：[为Hexo博客添加目录 | The Bloom of Youth | 锦瑟华年](http://kuangqi.me/tricks/enable-table-of-contents-on-hexo/)。
-这篇文章写得非常好，我担心原作者哪一天把它给删了，所以就擅自备份了过来。请点击链接查看原作。
-<!-- more -->
+拷贝自：[为Hexo博客添加目录 | The Bloom of Youth | 锦瑟华年](http://kuangqi.me/tricks/enable-table-of-contents-on-hexo/)。  
+这篇文章写得非常好，我担心原作者哪一天把它给删了，所以就擅自备份了过来。请点击链接查看原作。  
+
+---  
 
 Hexo博客系统的核心支持生成目录（Table of Contents），但其默认的主题Landscape并不支持目录的显示。我们只需对Landscape的主题文件稍作修改并添加一点目录的CSS就可以在文章前面显示友好的目录了。  
 
 ## 修改Landscape主题的ejs文件  
 
-我们首先要编辑文章显示页面的模板，也就是`themes/landscape/layout/_partial/article.ejs`文件。为了将目录生成在正文之前，我们首先在这个文件中找到`<%- post.content %>`，并在这一行之前加入如下代码：
+我们首先要编辑文章显示页面的模板，也就是`themes/landscape/layout/_partial/article.ejs`文件。为了将目录生成在正文之前，我们首先在这个文件中找到`<%- post.content %>`，并在**这一行之前**加入如下代码：
 ```
 <!-- Table of Contents -->
 <% if (!index && post.toc){ %>
