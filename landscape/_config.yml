@@ -49,3 +49,13 @@ valine:
   lang: zh-cn # i18n: zh-cn/en
   placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
   guest_info: nick,mail,link #valine comment header info
+
+# mathjax
+## https://github.com/xiangming/landscape-plus
+## 针对中国大陆地区对hexo官方主题landscape进行优化.
+## Hexo让landscape支持mathjax
+## enable: (bool,我自己定义的)启用mathjax
+##  local: (bool,我自己定义的)从本地加载MathJax
+mathjax:
+  enable: true
+#  local: true

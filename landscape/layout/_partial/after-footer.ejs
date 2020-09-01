@@ -19,6 +19,13 @@
   <%- js('fancybox/jquery.fancybox.min.js') %>
 <% } %>
 
+<!--如果"本theme的_config.yml"配置了mathjax的enable为真
+    并且"page has `mathjax: true` in Front-matter"
+    那么使用"mathjax.ejs"-->
+<% if (theme.mathjax && theme.mathjax.enable && page.mathjax){ %>
+<%- partial('mathjax') %>
+<% } %>
+
 <%- js('js/script') %>
 <%- partial('gauges-analytics') %>
 
