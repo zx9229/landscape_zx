@@ -55,7 +55,7 @@ valine:
 ## 针对中国大陆地区对hexo官方主题landscape进行优化.
 ## Hexo让landscape支持mathjax
 ## enable: (bool,我自己定义的)启用mathjax
-##  local: (bool,我自己定义的)从本地加载MathJax
+##  local: (bool,我自己定义的)从本地加载MathJax(预留字段,尚未实现)
 mathjax:
   enable: true
 #  local: true

@@ -17,8 +17,10 @@ MathJax.Hub.Queue(function() {
   }
 });
 </script>
-<% if (config.mathjax && config.mathjax.local){ %>
-  <script type="text/javascript" src= "<%- url_for() %>/MathJax-2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<% if (theme.mathjax && theme.mathjax.local){ %>
+  <!-- 链接 https://hexo.io/zh-cn/docs/helpers#url-for 解释了 url_for 的用法 -->
+                                          <!-- ./source/MathJax-2.7.9/MathJax.js -->
+  <script type="text/javascript" src= "<%- url_for() %>/MathJax-2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <% } else { %>
-  <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <% } %>

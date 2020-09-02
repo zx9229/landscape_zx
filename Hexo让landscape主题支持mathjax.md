@@ -35,9 +35,11 @@ MathJax.Hub.Queue(function() {
 });
 </script>
 <% if (theme.mathjax && theme.mathjax.local){ %>
-  <script type="text/javascript" src= "<%- url_for() %>/MathJax-2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- 链接 https://hexo.io/zh-cn/docs/helpers#url-for 解释了 url_for 的用法 -->
+                                          <!-- ./source/MathJax-2.7.9/MathJax.js -->
+  <script type="text/javascript" src= "<%- url_for() %>/MathJax-2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <% } else { %>
-  <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <% } %>
 ```
 
@@ -49,7 +51,7 @@ MathJax.Hub.Queue(function() {
 ## 针对中国大陆地区对hexo官方主题landscape进行优化.
 ## Hexo让landscape支持mathjax
 ## enable: (bool,我自己定义的)启用mathjax
-##  local: (bool,我自己定义的)从本地加载MathJax
+##  local: (bool,我自己定义的)从本地加载MathJax(预留字段,尚未实现)
 mathjax:
   enable: true
 #  local: true
